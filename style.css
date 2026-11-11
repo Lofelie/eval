@@ -1,0 +1,206 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-Italic.woff2') format('woff2'),
+        url('Roboto-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+
+p{
+    
+}
+
+
+      body {
+        
+          margin: 0;
+          background-color: #141414;
+      }
+
+      .accueil {
+          color: white;
+          text-decoration: none;
+          margin: 10px
+      }
+
+      .menu {
+          padding: 20px;
+          position: absolute;
+          z-index: 9999;
+          top: 0;
+          right: 0;
+      }
+
+      .menu_list {
+          display: flex;
+          justify-content: flex-start;
+          flex-direction: column;
+          list-style-type: none;
+          padding: 0;
+          gap: 20px;
+      }
+
+      .menu_item {
+          color: white;
+          display: flex;
+          justify-content: flex-end;
+          top: 0%;
+      }
+
+      .menu_link {
+        font-family: "Roboto";
+          text-decoration: none;
+          color: white;
+          text-transform: uppercase;
+          text-decoration: none
+      }
+
+      .menu_link:hover {
+          color: pink;
+      }
+
+      .hero {
+          height: 600px;
+          background-color: red;
+          position: relative;
+          z-index: 100;
+      }
+
+      .video {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+      }
+
+
+      .title {
+          font-family: "bob";
+          color: white;
+          size: 90px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin: 0;
+          transform: translate(-50%, -50%);
+          font-size: 80px;
+          text-shadow: 3px 3px 3px #f9c5b8;
+      }
+
+      .logo_box {
+          position: absolute;
+          top: 40px;
+          left: 50%;
+          z-index: 9999;
+      }
+
+      .logo {
+          width: 60px;
+          height: 60px;
+      }
+
+      .card {
+          width: 100%;
+          height: auto;
+          background-color: #141414;
+          display: block;
+          overflow: hidden;
+          text-decoration: none;
+      }
+
+      .card:hover .card_img {
+          transform: scale(1.1);
+          transition: all 1s;
+      }
+
+      .card_img {
+          width: 100%;
+          height: 250px;
+          object-fit: cover;
+          transition: transform 0.3s;
+      }
+
+      .card_txt {
+          font-size: 20px;
+          text-align: center;
+          color: #f9c5b8;
+          text-decoration: none;
+          padding: 10px;
+          text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.9);
+      }
+
+      .cards_container {
+          margin: 100px;
+          background-color: #141414;
+          display: flex;
+          flex-direction: column;
+          gap: 30px;
+      }
+
+      @media screen and (min-width: 768px) {
+          .cards_container {
+              flex-direction: row;
+              flex-wrap: wrap;
+          }
+
+          .card {
+              width: 47%;
+          }
+      }
+
+      @media screen and (min-width:1200px) {
+          .card {
+              width: calc((100% - 30px * 2) / 3);
+          }
+      }
+
+      @media screen and (min-width:1500px) {
+          .card {
+              width: calc((100% - 30px * 4) / 5);
+          }
+      }
+
+      p {
+        font-family: "Roboto";
+          color: white;
+          display: flex;
+          justify-content: center;
+          text-align: center;
+          font-size: 20px;
+      }
+
+      h2 {
+          color: white;
+          display: flex;
+          justify-content: center;
+          font-size: 30px;
+      }
+
+      .lien1 {
+          color: white;
+          font-size: 20px;
+          display: flex;
+          justify-content: center;
+      }
+
+      .lien2 {
+          color: white;
+          font-size: 20px;
+          display: flex;
+          justify-content: center;
+          margin-bottom: 150px;
+      }
+
+      .menu1_list {
+          display: flex;
+          justify-content: center;
+          gap: 20px;
+          list-style-type: none;
+          margin: 30px;
+      }
+
+      .bob_link {
+          color: white;
+          text-decoration: none;
+      }
